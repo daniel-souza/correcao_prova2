@@ -46,5 +46,11 @@ function listar_por_categoria(categoria) {
     */
 }
 
+function listar_por_valor(min, max) {
+    produtos.forEach(p => {
+        if(p.valor >= min && p.valor <= max)
+            console.log(p);
+    });
+}
 
-
+listar_por_valor(0, 10);
