@@ -26,8 +26,24 @@ const produtos = [
 
 function listar() {
     produtos.forEach(p => {
-        console.log(p)
+        console.log(p);
     })
+}
+
+function listar_por_categoria(categoria) {
+    produtos.forEach(p => {
+        if(p.categoria.toLowerCase() == categoria.toLowerCase()) {
+            console.log(p);
+        }
+    });
+    /*
+    const comprimento = produtos.length;
+    for(let i = 0; i < comprimento; i++) {
+        if(produtos[i].categoria == categoria) {
+            console.log(produtos[i]);
+        }
+    }
+    */
 }
 
 
